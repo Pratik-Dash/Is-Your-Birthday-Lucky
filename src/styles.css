@@ -1,0 +1,87 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  margin: 0%;
+}
+.header {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
+.description-container {
+  text-align: center;
+}
+.description-container h2 {
+  padding: 3rem;
+}
+.control-container {
+  margin-bottom: 10%;
+}
+.control {
+  display: block;
+  text-align: center;
+  margin: 1rem;
+  width: 40%;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  font-size: large;
+  border-radius: 2rem;
+}
+
+.control:hover {
+  border: 3px solid black;
+  transition: 0.5s;
+}
+.output {
+  border: 3px solid black;
+  width: 70%;
+  height: 6rem;
+  resize: none;
+  border-radius: 1rem;
+  font-weight: 900;
+}
+.check-btn {
+  padding: 1rem;
+  width: 150px;
+  border-radius: 2rem;
+  border: 2px solid black;
+  font-size: medium;
+  font-weight: 700;
+}
+.check-btn:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  height: 100%;
+  overflow: hidden;
+}
+.social-links-container {
+  margin: 0 auto;
+}
+.social-links {
+  list-style-type: none;
+  display: inline;
+  padding-inline-start: 0px;
+}
+.social-link {
+  display: inline;
+  margin: 1rem;
+}
+.social-link a {
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+}
+#disclaimer {
+  color: grey;
+  font-size: small;
+}
