@@ -38,6 +38,7 @@ export default function App() {
         <h2>Enter your birth date and your lucky number to find out.</h2>
       </div>
       <div class="control-container">
+        <label for="date">Date Of Birth</label>
         <input
           type="date"
           className="control date-control"
@@ -47,6 +48,7 @@ export default function App() {
             handleDateEvent(event);
           }}
         />
+        <label for="date">Lucky Number</label>
         <input
           type="number"
           className="control"
