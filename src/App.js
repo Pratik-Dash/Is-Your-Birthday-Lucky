@@ -10,9 +10,12 @@ export default function App() {
     setDate(event.target.value);
   }
   function handleNumEvent(event) {
+     if(event.target.value > 0){
     SetLuckyNum(event.target.value);
+    }
   }
-  function ClickEventHandler() {
+ function ClickEventHandler() {
+    if(date !== '' && luckyNum !== ''){
     var modifiedDate = date.replaceAll("-", "");
     console.log(modifiedDate);
     var sum = 0;
@@ -27,6 +30,15 @@ export default function App() {
         "Sorry, Your birthday is unlucky, but you are one of the lucky ones who get to make their own luck. ✊ "
       );
     }
+  }
+
+else{
+  setResult(
+    "One or both the inputs are empty,",
+   
+    
+  );
+}
   }
   return (
     <div className="App">
