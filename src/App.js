@@ -10,35 +10,33 @@ export default function App() {
     setDate(event.target.value);
   }
   function handleNumEvent(event) {
-     if(event.target.value > 0){
-    SetLuckyNum(event.target.value);
-    }
-  }
- function ClickEventHandler() {
-    if(date !== '' && luckyNum !== ''){
-    var modifiedDate = date.replaceAll("-", "");
-    console.log(modifiedDate);
-    var sum = 0;
-
-    for (const character of modifiedDate) {
-      sum += Number(character);
-    }
-    if (sum % luckyNum === 0) {
-      setResult("Yaaayy! your birthday is lucky 😎");
-    } else {
-      setResult(
-        "Sorry, Your birthday is unlucky, but you are one of the lucky ones who get to make their own luck. ✊ "
-      );
-    }
-  }
-
-else{
-  setResult(
-    "One or both the inputs are empty,",
-   
     
-  );
-}
+    SetLuckyNum(event.target.value);
+    
+  }
+function ClickEventHandler() {
+    if (date !== "" && luckyNum !== "") {
+      if (luckyNum > 0) {
+        var modifiedDate = date.replaceAll("-", "");
+        console.log(modifiedDate);
+        var sum = 0;
+
+        for (const character of modifiedDate) {
+          sum += Number(character);
+        }
+        if (sum % luckyNum === 0) {
+          setResult("Yaaayy! your birthday is lucky 😎");
+        } else {
+          setResult(
+            "Sorry, Your birthday is unlucky, but you are one of the lucky ones who get to make their own luck. ✊ "
+          );
+        }
+      } else {
+        setResult("lucky Number cannot be zero or negative");
+      }
+    } else {
+      setResult("One or both the inputs are empty.");
+    }
   }
   return (
     <div className="App">
@@ -97,13 +95,13 @@ else{
         <div className="social-links-conatienr">
           <ul className="social-links">
             <li class="social-link">
-              <a href="/">Twitter</a>
+              <a href="https://twitter.com/Prateek24675372" target = "_blank"><ion-icon name="logo-twitter"></ion-icon></a>
             </li>
             <li class="social-link">
-              <a href="/">Github</a>
+              <a href="https://github.com/Pratik-Dash"  target = "_blank"><ion-icon name="logo-github"></ion-icon></a>
             </li>
             <li class="social-link">
-              <a href="/">Linkedin</a>
+              <a href="https://www.linkedin.com/in/pratik-dash-5a7217134/"  target = "_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
             </li>
           </ul>
         </div>
